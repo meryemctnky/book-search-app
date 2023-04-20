@@ -1,38 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Book Search App
 
-## Getting Started
+Book Search App is a simple [React](https://reactjs.org/) and [Next.js](https://nextjs.org/) application that allows users to search for books using keywords. The app uses the Google Books API to fetch information about the books and displays them on the screen.
 
-First, run the development server:
+## See Live : [Here]()
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Search for books by entering keywords in the input field
+- View up to 20 search results
+- Click on the "Details" icon to view more information about the book, such as page count, description, and publication year
+- If the user tries to submit the form without entering any keywords, they will be alerted
+- If the book title is more than 30 characters long, an ellipsis will be displayed
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Technologies Used
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The Book Search App has been built using the following technologies:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [React.js](https://reactjs.org/) and [Next.js](https://nextjs.org/) for state management using Context API
+- [Axios](https://axios-http.com/) for making HTTP requests to the API
+- [Google Books API](https://developers.google.com/books/docs/overview) to fetch information about books
+- [Tailwind CSS](https://tailwindcss.com/) for UI design
+- [React Icons](https://react-icons.github.io/react-icons/) for icons
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage
 
-## Learn More
+To run the Book Search App, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository to your local machine.
+2. Install the dependencies using the npm install command.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Start the development server using the npm run dev command.
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Open your browser and navigate to http://localhost:3000.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Screenshots
+
+![book home page](/public/screenshot1.png)
+![book detail](/public/screenshot2.png)
